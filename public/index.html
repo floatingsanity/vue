@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Title Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Memento</h1>
+        <img src="https://m.media-amazon.com/images/I/515EOVqRexL._AC_UF894,1000_QL80_.jpg" alt="Movie Poster">
+        <p class="hidden">This is a complex story about Leonard Shelby (Guy Pearce), a man whose ability to make new memories is damaged when he is struck in the head while confronting two people who are attacking his wife (Jorja Fox) at their home in the middle of the night.</p>
+        <a href="https://www.imdb.com/title/tt0209144/" target="_blank" class="hidden">
+            <button class="btn">Visit IMDB</button>
+        </a>
+    </div>
+
+    <button id="toggleDetails" class="btn">Toggle Details</button>
+    <button id="duplicateCard" class="btn">Duplicate Card</button>
+    <button id="removeCard" class="btn">Remove Card</button>
+    <button id="changeTitle" class="btn">Change Title</button>
+    <button id="resetTitle" class="btn">Reset Title</button>
+
+    <script src="script.js"></script>
+</body>
 </html>
